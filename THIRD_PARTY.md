@@ -1,0 +1,8 @@
+# Third-party resources
+
+| Resource | Version/date | Licence | URL | Used for |
+|---|---|---|---|---|
+| ChEMBL | (add) | (check on download page) | (add) | Compound-target bioactivity |
+| COCONUT | (add) | (check on download page) | (add) | Natural product structures |
+| RDKit | (add) | BSD-3-Clause | https://www.rdkit.org | Cheminformatics |
+| pandas, NumPy, scikit-learn, Streamlit | (add) | (add) | | Data, ML, app |

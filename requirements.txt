@@ -1,0 +1,9 @@
+rdkit
+pandas
+numpy
+scikit-learn
+streamlit
+tqdm
+pyarrow
+jupyterlab
+ipykernel
