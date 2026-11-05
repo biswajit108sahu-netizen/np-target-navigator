@@ -1,0 +1,77 @@
+=== Caffeine ===
+Closest non-identical library compound: 0.60
+Drug-likeness: no major drug-likeness flags (QED 0.54)
+                       target_name  score  confidence  n_neighbors
+            Adenosine receptor A2b   5.07        0.21            9
+                      Prelamin-A/C   5.03        0.21           10
+            Adenosine receptor A2a   2.88        0.12            6
+     Survival motor neuron protein   2.61        0.11            5
+    5-hydroxytryptamine receptor 7   2.12        0.09            5
+Microtubule-associated protein tau   1.54        0.06            3
+        RecQ-like DNA helicase BLM   1.03        0.04            2
+             Tumor necrosis factor   1.00        0.04            2
+
+=== Capsaicin ===
+Closest non-identical library compound: 0.79
+Drug-likeness: structural alerts (possible reactivity/toxicity) (QED 0.54)
+                                                     target_name  score  confidence  n_neighbors
+Transient receptor potential cation channel subfamily V member 1  23.18        0.79           39
+                                Bifunctional epoxide hydrolase 2   3.25        0.11            6
+                                             Cytochrome P450 3A4   1.95        0.07            3
+                                             Cytochrome P450 2C9   1.89        0.06            3
+                                          Cannabinoid receptor 1   1.50        0.05            3
+                                            Cytochrome P450 2C19   1.39        0.05            2
+                              Microtubule-associated protein tau   0.76        0.03            1
+                            Serine/threonine-protein kinase mTOR   0.76        0.03            1
+
+=== Piperine ===
+Closest non-identical library compound: 0.83
+Drug-likeness: structural alerts (possible reactivity/toxicity) (QED 0.63)
+                                                     target_name  score  confidence  n_neighbors
+                             Amine oxidase [flavin-containing] B   7.79        0.30           14
+                                      Ras-related protein Rab-9A   5.14        0.20           10
+                     NPC intracellular cholesterol transporter 1   4.17        0.16            8
+Transient receptor potential cation channel subfamily V member 1   3.32        0.13            6
+                                             Cytochrome P450 3A4   2.42        0.09            5
+                              Microtubule-associated protein tau   2.28        0.09            5
+                                             Cytochrome P450 1A2   2.10        0.08            4
+                             Amine oxidase [flavin-containing] A   1.96        0.08            4
+
+=== Resveratrol ===
+Closest non-identical library compound: 0.90
+Drug-likeness: structural alerts (possible reactivity/toxicity) (QED 0.69)
+                              target_name  score  confidence  n_neighbors
+             Prostaglandin G/H synthase 2   5.93        0.22           11
+           Amyloid-beta precursor protein   5.54        0.20           10
+                            Transthyretin   4.74        0.17            8
+             Prostaglandin G/H synthase 1   4.25        0.16            8
+                      Cytochrome P450 1A1   2.50        0.09            4
+       Microtubule-associated protein tau   2.14        0.08            4
+                      Cytochrome P450 1B1   1.95        0.07            3
+Polyunsaturated fatty acid 5-lipoxygenase   1.94        0.07            3
+
+=== Quercetin ===
+Closest non-identical library compound: 0.78
+Drug-likeness: PAINS alert (may give false positives in assays); structural alerts (possible reactivity/toxicity) (QED 0.43)
+                           target_name  score  confidence  n_neighbors
+        Xanthine dehydrogenase/oxidase   6.58        0.22           10
+       ATP-dependent translocase ABCB1   6.38        0.21           10
+Aldo-keto reductase family 1 member B1   5.01        0.17            8
+                   Cytochrome P450 1A1   4.97        0.17            7
+                   Cytochrome P450 1A2   4.97        0.17            7
+                   Cytochrome P450 1B1   4.97        0.17            7
+                   DNA polymerase beta   4.84        0.16            8
+         ATP-dependent DNA helicase Q1   4.51        0.15            7
+
+=== Curcumin ===
+Closest non-identical library compound: 0.89
+Drug-likeness: structural alerts (possible reactivity/toxicity) (QED 0.55)
+                              target_name  score  confidence  n_neighbors
+           Amyloid-beta precursor protein  15.25        0.41           20
+                         Beta-secretase 1  12.18        0.33           17
+       Microtubule-associated protein tau  10.88        0.30           14
+Polyunsaturated fatty acid 5-lipoxygenase   2.24        0.06            3
+      Amine oxidase [flavin-containing] B   1.58        0.04            2
+   Nuclear factor NF-kappa-B p105 subunit   1.45        0.04            2
+                 Prostaglandin E synthase   1.38        0.04            2
+   Aldo-keto reductase family 1 member B1   0.89        0.02            1
