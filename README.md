@@ -15,6 +15,3 @@ Work in progress (EthnoHack 2026, 2-8 Nov).
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
-## Team
-- (add names and GitHub usernames)
