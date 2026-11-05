@@ -46,7 +46,7 @@ def get_admet_flags(smiles):
     if pains:
         notes.append("PAINS alert (may give false positives in assays)")
     if brenk:
-        notes.append("structural alerts (possible reactivity/toxicity)")
+        notes.append("structural alerts present (see list below; not necessarily toxic)")
 
     return {
         "smiles_std": std,
