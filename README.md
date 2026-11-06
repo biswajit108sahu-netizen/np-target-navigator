@@ -145,3 +145,32 @@ All code in this repository was written during EthnoHack 2026 (2-8 November 2026
 Biswajit Sahu ([@biswajit108sahu-netizen](https://github.com/biswajit108sahu-netizen)), solo entry.
 
 See [`LICENSE`](LICENSE) for the licence of this code.
+
+| Group (similarity to nearest other library compound) | Compounds | Top-1 (95% CI) | Top-5 (95% CI) | Top-10 (95% CI) | Baseline top-10 (95% CI) |
+|---|---|---|---|---|---|
+| Overall | 300 | 0.81 (0.76-0.85) | 0.91 (0.87-0.94) | 0.92 (0.89-0.95) | 0.14 (0.10-0.18) |
+| 0.4 - 0.7 | 55 | 0.55 (0.42-0.67) | 0.73 (0.60-0.83) | 0.78 (0.66-0.87) | 0.35 (0.23-0.48) |
+| >= 0.7 | 244 | 0.87 (0.82-0.91) | 0.96 (0.92-0.97) | 0.96 (0.93-0.98) | 0.09 (0.06-0.13) |
+| < 0.4 | 1 | n/a | n/a | n/a | n/a |
+
+Intervals are 95% Wilson score intervals (`src/validation_ci.py`, output in `docs/validation_ci.txt`).
+
+## How far are natural products from the training data?
+
+In a random sample of 400 COCONUT compounds (`src/novelty_scan.py`, output in `docs/coconut_novelty_scan.csv`), the median similarity to the nearest ChEMBL ligand was 0.50. About 10% were below 0.3, 26% below 0.4 and 80% below 0.7. By contrast, 81% of the ChEMBL validation compounds had a neighbour at 0.7 or above. The overall validation figure therefore overstates expected performance on natural products, and the 0.4-0.7 row is the more realistic guide. About a quarter of natural products fall below 0.4, where validation data is almost absent and the app shows a low-confidence warning. Percentages carry roughly +/-4 points of sampling error, and they assume the similarity-accuracy relationship holds for natural products, which was not tested.
+
+## Why similarity voting
+
+Bioactivity data is sparse and uneven across targets, which makes it hard to train reliable per-target models. Nearest-neighbour voting is a strong, standard baseline for this setting. It needs no training, and every prediction can be traced to named neighbouring compounds with measured potencies, which supports the uncertainty reporting in the app.
+
+## Potential impact
+
+The tool helps researchers prioritise which natural compounds are worth experimental follow-up, using only a structure as input. It supports target-hypothesis generation in natural-product and ethnopharmacology research, and everything is open and reproducible.
+
+## Next steps
+
+- Harder validation with scaffold-based splits, and a larger sample of low-similarity compounds.
+- Add natural-product-specific bioactivity sources to widen coverage.
+- Check top hits with docking or experimental assays.
+- Calibrate the confidence score so it can be read as a probability.
+- Extend beyond human single-protein targets.
